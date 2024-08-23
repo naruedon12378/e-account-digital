@@ -1,0 +1,35 @@
+<?php
+
+return [
+    'member_history' => 'Member History',
+    'fullname' => 'Fullname',
+    'image' => 'Image',
+    'role' => 'Role',
+    'registration_date' => 'Registration Date',
+    'disabled_date' => 'Disabled Date',
+    'actions' => 'Actions',
+    'number' => 'No.',
+    'member_code' => 'User Code',
+    'back_to_member_page' => 'Back to Member page',
+
+    // Add/Edit Page
+    'profile_image' => 'Profile Image',
+    'add_image' => 'Upload Image',
+    'general_information' => 'General Information',
+    'first_name' => 'First Name',
+    'last_name' => 'Last Name',
+    'phone_number' => 'Phone Number',
+    'login_information' => 'Login Information',
+    'email' => 'Email',
+    'password' => 'Password',
+    'password_confirmation' => 'Password Confirmation',
+    'permissions' => 'Permissions',
+    'list' => 'List',
+    'all' => 'All',
+    'view' => 'View',
+    'add' => 'Add',
+    'edit' => 'Edit',
+    'delete' => 'Delete',
+    'other' => 'Other',
+    'delete_member' => 'Delete Member',
+];

@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'email_or_username' => 'อีเมล หรือ ชื่อผู้ใช้',
+    'email' => 'อีเมล',
+    'username' => 'ชื่อผู้ใช้',
+    'password' => 'รหัสผ่าน',
+    'confirm_password' => 'ยืนยันรหัสผ่าน',
+    'fullname' => 'ชื่อ-นามสกุล',
+    'firstname' => 'ชื่อ',
+    'lastname' => 'นามสกุล',
+    'address' => 'ที่อยู่',
+    'province' => 'จังหวัด',
+    'district' => 'อำเภอ',
+    'sub_district' => 'ตำบล',
+    'postcode' => 'รหัสไปรษณีย์',
+    'phone_number' => 'เบอร์โทรศัพท์',
+    'email' => 'อีเมล',
+    'line_id' => 'Line id (ไม่จำเป็นต้องใส่ก็ได้)',
+    'specify' => 'ระบุ',
+    'specify_requested_amount' => 'ระบุวงเงิน',
+    'specify_month' => 'ระบุ (เดือน).',
+    'additional_info' => 'รายละเอียดเพิ่มเติมที่ผู้สมัครสมาชิกต้องการให้ทางเว็บทราบ',
+    'msg' => 'ข้อความ',
+    'btn_send'=> 'ส่ง',
+];

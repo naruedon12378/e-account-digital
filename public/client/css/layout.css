@@ -1,0 +1,146 @@
+@import url("./bootstrap.min.css");
+@import url("./jquery-ui.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
+@import url("./owl.carousel.min.css");
+@import url("./owl.theme.default.css");
+@import url("./jquery.fancybox.css");
+*:focus,
+*:active {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+body {
+  animation: fade-in 1s, bg-move 10s linear infinite;
+  -webkit-animation: fade-in 1s, bg-move 10s linear infinite;
+  font: 1em "IBM Plex Sans Thai", sans-serif, "Poppins", sans-serif;
+  color: #000;
+}
+
+oz-selection {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background-color: transparent !important;
+}
+
+ol,
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hoverstyle figure {
+  overflow: hidden;
+  margin-bottom: 0;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.hoverstyle figure div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  height: 100%;
+  line-height: 20;
+  width: 100%;
+  border-radius: 10px;
+}
+.hoverstyle figure a img {
+  transition-duration: 0.6s;
+  transition-property: transform;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.hoverstyle:hover figure a img {
+  transform: scale(1.02);
+  border-radius: 10px;
+}
+.hoverstyle:hover figure div {
+  opacity: 1;
+}
+
+.wrap_menu {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  margin: 0;
+  transition: 0.5s;
+  background-color: #fff;
+  box-shadow: 0 3px 5px 0px rgba(0, 0, 0, 0.1) !important;
+}
+
+.wrap_menu.sticky {
+  background-color: #fff;
+  top: 0px;
+  padding: 0px;
+}
+
+/*----------- RESPONSIVE --------------*/
+@media (max-width: 991px) {
+  .zeynep {
+    right: auto;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    width: 295px;
+  }
+  .zeynep .zeynep-opened body {
+    overflow: hidden;
+  }
+  .zeynep ul {
+    list-style-type: none;
+    padding: 0;
+    padding-left: 20px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .zeynep ul > li {
+    display: block;
+  }
+  .zeynep ul > li > a {
+    color: inherit;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 18px 20px;
+    text-decoration: none;
+    transition: all 150ms;
+  }
+  .zeynep ul > li > a:hover {
+    background-color: #000;
+    border-radius: 3px;
+  }
+  .zeynep ul > li:not(:last-child) > a {
+    border-bottom: 1px solid #000;
+  }
+  .zeynep ul > li.has-submenu > a {
+    background-image: url("../images/submenu-ar.svg");
+    background-position: right 20px center;
+    background-repeat: no-repeat;
+    background-size: 8px 14px;
+  }
+  .zeynep ul > li.has-submenu > a:hover {
+    background-image: url("../images/submenu-ar.svg");
+  }
+}/*# sourceMappingURL=layout.css.map */

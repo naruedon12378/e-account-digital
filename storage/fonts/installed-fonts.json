@@ -1,0 +1,11 @@
+{
+    "fontawesome": {
+        "normal": "fontawesome_normal_0d054c01a20249458ebc59d71623830f"
+    },
+    "thsarabunnew": {
+        "normal": "D:\\MeetingCreative\\Laravel\\eaksaha-app\\storage\\fonts\/thsarabunnew_normal_0dece46a8085d8d17ffa37281e4ef813",
+        "bold": "D:\\MeetingCreative\\Laravel\\eaksaha-app\\storage\\fonts\/thsarabunnew_bold_f39795bf986a8c7a20ac220fe8a03acb",
+        "italic": "D:\\MeetingCreative\\Laravel\\eaksaha-app\\storage\\fonts\/thsarabunnew_italic_f676547be29591c7c480fcdc3baee4f2",
+        "bold_italic": "thsarabunnew_bold_italic_1f1fcc543e834ea76f4ef8b75ba652cd"
+    }
+}

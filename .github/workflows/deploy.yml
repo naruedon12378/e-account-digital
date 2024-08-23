@@ -1,0 +1,50 @@
+name: deploy
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Deploy to server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd public_html
+
+            # Enter maintenance mode
+            /usr/local/php82/bin/php artisan down --refresh=60
+
+            echo "Deployment started ..."
+            git reset --hard HEAD  
+            git pull
+
+            # Install composer dependencies
+            # composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
+            composer install --no-interaction --prefer-dist --optimize-autoloader
+
+            # Clear the old cache
+            /usr/local/php82/bin/php artisan clear-compiled
+            
+            composer dump-autoload
+
+            #/usr/local/php82/bin/php artisan route:cache
+
+            # Recreate cache
+            # /usr/local/php82/bin/php artisan optimize
+
+            echo "Deployment finished!"
+
+            # Exit maintenance mode
+            /usr/local/php82/bin/php artisan up
+
+            rm -rf public_html/storage/logs/*.log

@@ -1,0 +1,80 @@
+<?php
+
+return [
+    'head' => 'Payroll Salary',
+
+    // Datatable
+    'salary_code' => 'Salary Code',
+    'issued_date' => 'Issued Date',
+    'number_of_employee' => 'Number of Employee',
+    'cycle_date' => 'Cycle Date',
+    'payment_date' => 'Payment Date',
+    'payment_amount' => 'Payment Amount',
+    'status' => 'Status',
+    'actions' => 'Actions',
+
+    // button
+    'create_salary_pay_run' => 'Create Salary Pay Run',
+    'create_salary_summary_report' => 'Create Salary Summary Report',
+    'export_report' => 'Export Report',
+    'import_salary_pay_run' => 'Import Salary Pay Run',
+    'add_new_employee' => 'Add New Employee',
+    'cancel' => 'Cancel',
+    'save_draft' => 'Save Draft',
+    'approve' => 'Approve',
+    'approve_and_record_salary_payable' => 'Approve and record salary payable',
+    'send_for_approve' => 'Send for approve',
+
+    // financial record
+    'pay_run_period' => 'Pay run period',
+    'issue_date' => 'Issue Date',
+    'due_date' => 'Due Date',
+    'from_date' => 'From Date',
+    'to_date' => 'To Date',
+    'employees_receive_this_salary' => 'Employee receive this salary',
+    'employee_id' => 'Employee ID',
+    'name' => 'Name',
+    'salary' => 'Salary',
+    'allowance' => 'Allowance',
+    'commission' => 'Commission',
+    'overtime' => 'Overtime',
+    'travel_actual' => 'Travel (actual)',
+    'withholding_tax' => 'Withholding Tax',
+    'total_revenue' => 'Total Revenue',
+    'total_deduct' => 'Total Deduct',
+    'net_salary' => 'Net Salay',
+    'salary_pay_run_summary' => 'Salary pay run summary',
+    'total_salary' => 'Total',
+    'add' => 'Add',
+    'less' => 'Less',
+    'summary_of_revenue_items' => 'Summary of revenue items',
+    'summary_of_deduction_items' => 'Summary of deduction items',
+    'social_security' => 'Social Security',
+    'pvd' => 'Provident Fund',
+
+    'withholding_tax' => 'Withholding Tax',
+    'baht' => 'Baht',
+    'net_amount_to_pay' => 'Net amount to pay',
+    'social_security_employer' => 'Social Security (Employer)',
+    'payable' => 'Payable',
+
+    'alert_select_checking1' => 'Please select employee before submit!',
+    'alert_select_checking2' => 'Duplicated employee!',
+    'alert_count_tr' => 'Please add employee!',
+
+    'ALL' => 'All',
+    'DRAFT' => 'Draft',
+    'AWAIT' => 'Await Approval',
+    'OUTSTANDING' => 'Outstanding',
+    'PAID' => 'Paid',
+    'VOID' => 'Voided',
+
+    'Pay_Run' => 'Salary pay run',
+    'General_Info' => 'General Info',
+    'EmpCount' => 'Employees receive this salary',
+
+    'action_0' => 'Save draft',
+    'action_1' => 'Approve',
+    'action_2' => 'Approve and record salary payable',
+    'action_3' => 'Send for Approve',
+];
